@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed0f4fbf0dc69a4f8f6238196bf068d, type: 3}
+  m_Name: CharacterMasterObj
+  m_EditorClassIdentifier: 
+  sheet:
+  - Name: "\u6DBC\u98A8 \u9752\u8449"
+    Hp: 50
+    Rarity: 1
+    Post: 1
+  - Name: "\u516B\u795E \u30B3\u30A6"
+    Hp: 70
+    Rarity: 3
+    Post: 3
+  - Name: "\u9060\u5C71 \u308A\u3093"
+    Hp: 70
+    Rarity: 2
+    Post: 3
+  - Name: "\u6EDD\u672C \u3072\u3075\u307F"
+    Hp: 60
+    Rarity: 2
+    Post: 1
+  - Name: "\u7BE0\u7530 \u306F\u3058\u3081"
+    Hp: 50
+    Rarity: 1
+    Post: 2
+  - Name: "\u98EF\u5CF6 \u3086\u3093"
+    Hp: 62
+    Rarity: 0
+    Post: 1
+  - Name: "\u963F\u6CE2\u6839 \u3046\u307F\u3053"
+    Hp: 75
+    Rarity: 3
+    Post: 0
+  - Name: "\u8449\u6708 \u3057\u305A\u304F"
+    Hp: 50
+    Rarity: 2
+    Post: 3
+  - Name: "\u685C \u306D\u306D"
+    Hp: 40
+    Rarity: 0
+    Post: 0
