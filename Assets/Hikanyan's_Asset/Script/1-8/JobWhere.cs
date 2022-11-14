@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 public class JobWhere : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] CharacterMaster date;
     void Start()
     {
-        
-    }
+        Debug.Log($"Director : {date.sheet.Count(x => x.Post == CharacterMaster.JobPost.Director)}"); 
+        Debug.Log($"Modeler : {date.sheet.Count(x => x.Post == CharacterMaster.JobPost.Modeler)}"); 
+        Debug.Log($"Motion : {date.sheet.Count(x => x.Post == CharacterMaster.JobPost.Motion)}"); 
+        Debug.Log($"Programer : {date.sheet.Count(x => x.Post == CharacterMaster.JobPost.Programer)}"); 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
