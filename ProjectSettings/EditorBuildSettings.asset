@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scene01.unity
+    path: Assets/Hikanyan's_Asset/Scene/Scene01.unity
     guid: 8997b4c105ee55d4d845a24203f22644
   - enabled: 1
-    path: Assets/Scenes/Scene02.unity
+    path: Assets/Hikanyan's_Asset/Scene/Scene02.unity
     guid: 88061aa311721ec4d9ffa5967fbd7f2e
   - enabled: 1
-    path: Assets/Scenes/Scene03.unity
+    path: Assets/Hikanyan's_Asset/Scene/Scene03.unity
     guid: 3a6003c7611085346b5821a3d6411076
+  - enabled: 1
+    path: Assets/Hikanyan's_Asset/Scene/Result.unity
+    guid: acaba8edea85d1b449175abbaf2af095
+  - enabled: 1
+    path: Assets/Hikanyan's_Asset/Scene/ResultTest01.unity
+    guid: 7d71047188cdae64daa4db731a620f1e
+  - enabled: 1
+    path: Assets/Hikanyan's_Asset/Scene/SceneTest 01.unity
+    guid: b1a193b938551cd4ab22edbb251f2680
   m_configObjects: {}

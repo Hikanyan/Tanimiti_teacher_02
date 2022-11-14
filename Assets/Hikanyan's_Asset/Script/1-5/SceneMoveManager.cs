@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,14 +8,18 @@ public class SceneMoveManager : SingletonMonoBehaviour<SceneMoveManager>
 {
     Scene currentScene;
     Stack<string> sceneNames = new Stack<string>();
-    public void Load(string sceneName)
+    public void Start()
     {
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += (nextScene, mode) =>
         {
             currentScene = nextScene;
         };
-
+    }
+    public void Load(string sceneName)
+    {
+        sceneNames.Push(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(sceneName);
     }
     public void LoadPrevious()
     {
@@ -25,6 +30,7 @@ public class SceneMoveManager : SingletonMonoBehaviour<SceneMoveManager>
         }
         SceneManager.LoadScene(sceneNames.Pop());
     }
+    
 
     public void LoadWithArgument<Argument>(string sceneName, Argument argument)
     {
@@ -45,4 +51,8 @@ public class SceneMoveManager : SingletonMonoBehaviour<SceneMoveManager>
         }
     }
 
+    internal void LoadWithArgument<T>(T sceneResult1, T sceneResult2)
+    {
+        throw new NotImplementedException();
+    }
 }
