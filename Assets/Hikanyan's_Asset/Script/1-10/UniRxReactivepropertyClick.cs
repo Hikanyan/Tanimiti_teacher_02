@@ -8,7 +8,6 @@ public class UniRxReactivepropertyClick : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _countText;
     [SerializeField] int _addValue;
-    [SerializeField] List<Button> _buttons;
     private ReactiveProperty<int> _count = new ReactiveProperty<int>();
 
     private void Awake()
