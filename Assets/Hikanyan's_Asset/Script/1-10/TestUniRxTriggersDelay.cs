@@ -12,8 +12,8 @@ public class TestUniRxTriggersDelay : MonoBehaviour
     void Start()
     {
         uiButton.OnClickAsObservable()
-        .Delay(TimeSpan.FromSeconds(0.5f))
         .ThrottleFirst(TimeSpan.FromSeconds(0.3f))
+        .Delay(TimeSpan.FromSeconds(0.5f))
         .Subscribe(_ => MoveTransform());
     }
     void MoveTransform()

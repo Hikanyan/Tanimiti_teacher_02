@@ -12,8 +12,8 @@ public class OnMouseDownAsDelay : MonoBehaviour
     void Start()
     {
         uiButton.OnMouseDownAsObservable()
-        .Delay(TimeSpan.FromSeconds(0.5f))
         .ThrottleFirst(TimeSpan.FromSeconds(0.3f))
+        .Delay(TimeSpan.FromSeconds(0.5f))
         .Subscribe(_ => MoveTransform());
     }
     void MoveTransform()
